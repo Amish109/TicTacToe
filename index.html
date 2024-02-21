@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$.Array</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="align form_div">
+        <div class="login ">
+        <header class="login__header">
+            <h2>Enter Name</h2>
+        </header>
+        <form class="login__form">
+            <div>
+            <label for="playerX">Player 1 name:-</label>
+            <input type="text" id="playerX" name="playerX" required autocomplete="off">
+            </div>
+            <div>
+            <label for="playerO">Player 2 name:-</label>
+            <input type="text" id="playerO" name="playerO" required autocomplete="off">
+            </div>
+            <div id="buttonHandle">
+            <input class="button submit" type="submit" value="Continue">
+            <input class="button skip" type="button" value="Skip">
+            </div>
+        </form>
+        </div>
+    </div>
+
+    <div class="Tic-Tac-Toe" id="TicTacToe">
+        <h1 id="WinnerText">Lets see who wins?</h1>
+        <div id="container_div">
+            <div id="test">
+                <div id="X-WinCount"class="score_count"><span id="xPlayerName">X</span><br><span id="x-increment">0</span></div>
+                <div id="O-WinCount"class="score_count"><span id="oPlayerName">O</span><br><span id="o-increment">0</span></div>
+            </div>
+            <div class="Main_div">
+                <div id="0_0" class="miniDiv"></div>
+                <div id="0_1" class="miniDiv"></div>
+                <div id="0_2" class="miniDiv"></div>
+                <div id="1_0" class="miniDiv"></div>
+                <div id="1_1" class="miniDiv"></div>
+                <div id="1_2" class="miniDiv"></div>
+                <div id="2_0" class="miniDiv"></div>
+                <div id="2_1" class="miniDiv"></div>
+                <div id="2_2" class="miniDiv"></div>
+            </div>
+        </div>
+        <div class="button">
+            <button id="Reset">Reset</button>
+            <button id="Restart">Restart</button>
+        </div>
+    </div>
+<script src="2D_Array.js"></script>    
+</body>
+</html> 
